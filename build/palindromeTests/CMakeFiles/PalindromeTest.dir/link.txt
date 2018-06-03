@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/PalindromeTest.dir/PalindromeTest.cpp.o  -o PalindromeTest /usr/lib/libgtest.a /usr/lib/libgtest_main.a ../palindromeLib/libpalindromeLib.a /usr/lib/libgtest.a -lpthread /usr/lib/libgtest_main.a -lpthread 
