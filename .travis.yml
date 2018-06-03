@@ -11,8 +11,8 @@ compiler:
 # tej samej zmiennej srodowiskowej
 env:
 # - <ENV_VARIABLE_NAME>=<VALUE_VARIANT>
-  - BUILD_TYPE=DEBUG
-  - BUILD_TYPE=RELEASE
+  - BUILD_TYPE=Debug
+  - BUILD_TYPE=Release
 # Polecenia wykonywane przed instalacja zaleznosci
 before_install:
   - sudo apt-get -qq update
