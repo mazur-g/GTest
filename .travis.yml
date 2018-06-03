@@ -4,8 +4,8 @@ sudo: true
 # TODO Wymien wszystkie wspierane kompilatory
 compiler:
 # - <COMPILER_NAME>
-  -g++
-  -clang
+  - g++
+  - clang++
 
 # TODO Wymien wszytkie konfiguracje budowania (Debug,Release) zapisujac je jako warianty
 # tej samej zmiennej srodowiskowej
