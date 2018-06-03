@@ -1,0 +1,49 @@
+language: cpp
+sudo: true
+
+# TODO Wymien wszystkie wspierane kompilatory
+compiler:
+# - <COMPILER_NAME>
+  -g++
+  -clang
+
+# TODO Wymien wszytkie konfiguracje budowania (Debug,Release) zapisujac je jako warianty
+# tej samej zmiennej srodowiskowej
+env:
+# - <ENV_VARIABLE_NAME>=<VALUE_VARIANT>
+  - BUILD_TYPE=DEBUG
+  - BUILD_TYPE=RELEASE
+# Polecenia wykonywane przed instalacja zaleznosci
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libgtest-dev valgrind cmake
+  - wget https://github.com/google/googletest/archive/release-1.7.0.tar.gz
+  - tar xf release-1.7.0.tar.gz
+
+# Instalacja zaleznosci (GoogleTest)
+install:
+  - cd googletest-release-1.7.0
+  - cmake -DBUILD_SHARED_LIBS=ON .
+  - make
+  - sudo cp -a include/gtest /usr/include
+  - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
+
+# TODO Napisz skrypt przeprowadzajacy kompilacje oprogramowania (narzedzia cmake i make)
+# ps. wykorzystaj stworzona zmienna srodowiskowa do wybrania "BUILD_TYPE" na etapie generowania
+# projektu w narzedziu CMake
+before_script:
+  - cd "${TRAVIS_BUILD_DIR}"
+# Tutaj uzupelnij (sciezka to root testowanego repozytorium)
+  - cd build
+  - cmake ..
+  - make
+  
+# TODO Uruchom testy 
+script:
+  - cd "${TRAVIS_BUILD_DIR}/build"
+  - ./palindromeTests/PalindromeTest
+# Tutaj uzupelnij (narzedzie ctest)
+
+
+notifications:
+  email: false
