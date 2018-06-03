@@ -1,2 +1,2 @@
 # GTest
-testing automatic tests with travis
+Testing automatic tests with travis
