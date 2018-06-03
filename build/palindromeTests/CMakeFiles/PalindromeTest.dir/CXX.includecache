@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../palindromeLib/Palindrome.h
+string
+-
+
+/home/ja2/studia/ADV/build_systems/Exercises/task3/palindromeTests/PalindromeTest.cpp
+Palindrome.h
+/home/ja2/studia/ADV/build_systems/Exercises/task3/palindromeTests/Palindrome.h
+gtest/gtest.h
+/home/ja2/studia/ADV/build_systems/Exercises/task3/palindromeTests/gtest/gtest.h
+

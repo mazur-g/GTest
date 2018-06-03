@@ -1,0 +1,11 @@
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/CMakeFiles/rebuild_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/CMakeFiles/test.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/CMakeFiles/edit_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeLib/CMakeFiles/rebuild_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeLib/CMakeFiles/edit_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeLib/CMakeFiles/palindromeLib.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeLib/CMakeFiles/test.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeTests/CMakeFiles/rebuild_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeTests/CMakeFiles/edit_cache.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeTests/CMakeFiles/PalindromeTest.dir
+/home/ja2/studia/ADV/build_systems/Exercises/task3/build/palindromeTests/CMakeFiles/test.dir
