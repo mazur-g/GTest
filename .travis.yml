@@ -36,14 +36,14 @@ before_script:
 # Tutaj uzupelnij (sciezka to root testowanego repozytorium)
   - cd build 
   - cmake ..
-  - make
 
 
 # TODO Uruchom testy 
 script:
   - cd "${TRAVIS_BUILD_DIR}/build"
-  - ./palindromeTests/PalindromeTest
 # Tutaj uzupelnij (narzedzie ctest)
+  - ./palindromeTests/PalindromeTest
+  - make test
 
 
 notifications:
