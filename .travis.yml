@@ -35,7 +35,7 @@ before_script:
   - cd "${TRAVIS_BUILD_DIR}"
 # Tutaj uzupelnij (sciezka to root testowanego repozytorium)
   - cd build 
-  - cmake ..
+  - cmake -DCMAKE_BUILD_TYPE=${BUILD_TYPE} ..
   - make
 
 
